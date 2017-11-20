@@ -67,7 +67,7 @@ public class ShaderExperimentMain extends ApplicationAdapter {
 		tex = new Texture(pixmap);
 		pixmap.dispose();*/
 
-		tex0 = new Texture(Gdx.files.internal("shader_assets/grass.png"));
+		tex0 = new Texture(Gdx.files.internal("shader_assets/water.png"));
 		tex1 = new Texture(Gdx.files.internal("shader_assets/light_blue.png"));
 		mask = new Texture(Gdx.files.internal("shader_assets/mask.png"));
 

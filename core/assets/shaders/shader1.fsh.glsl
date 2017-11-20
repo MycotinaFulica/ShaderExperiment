@@ -109,16 +109,16 @@ void main(){
                   (vec2(.5)-texture(u_texture, uv*0.3-vec2(-sin(2.5*time*0.005)/2, sin(2.5*time*0.0125)/2)).xy)*amp;
 
     //sample color of the first texture
-    vec4 texColor0 = texture2D(u_texture, v_texCoord0);
+    //vec4 texColor0 = texture2D(u_texture, v_texCoord0);
 
     //sample color of the second texture
-    vec4 texColor1 = texture2D(u_texture1, v_texCoord0);
+    //vec4 texColor1 = texture2D(u_texture1, v_texCoord0);
 
     //pertube texcoord by x and y\n"
-    vec2 distort = 0.1 * vec2(snoise(v_texCoord0 + vec2(0.0, time/3.0)) + snoise(v_texCoord0 + vec2(time/3.0, 0.0)));
+    //vec2 distort = 0.1 * vec2(snoise(v_texCoord0 + vec2(0.0, time/3.0)) + snoise(v_texCoord0 + vec2(time/3.0, 0.0)));
 
     //get the alpha channel of the mask
-    float mask = texture2D(u_mask, v_texCoord0 + distort).a;
+    //float mask = texture2D(u_mask, v_texCoord0 + distort).a;
 
     //do interpolation based on the mask
     gl_FragColor =  texture(u_texture, p)*tint_color;
